@@ -22,7 +22,7 @@ function escape(carpark) {
     }
 
     carpark.forEach((element, floor) => { //初始化樓層資訊
-        if (floor == totalFloor) {
+        if (floor == totalFloor-1) {
             ladder.push(totalCarpark - 1);
         } else {
             ladder.push(element.indexOf(1));
